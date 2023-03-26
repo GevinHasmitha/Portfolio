@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/myself.jpg";
+import HeroImage from "../assets/myself3.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -16,7 +16,7 @@ const Home = () => {
         <div className="flex flex-col justify-center  h-full">
           {/* =========================================================================================================================================== */}
           <h2 className="text-4xl md:text-7xl font-bold p-4  text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text pl-0">
-            lala
+            Hi, I'm Gevin!!
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
             <b>
