@@ -12,30 +12,37 @@ const Portfolio = () => {
     {
       id: 1,
       src: covidMapper,
+      link: "https://github.com/GevinHasmitha/CovidMapper",
     },
     {
       id: 2,
       src: cabinbooker,
+      link: "https://github.com/GevinHasmitha/Cruise-ship-room-management-system",
     },
     {
       id: 3,
       src: portimg,
+      link: "https://github.com/GevinHasmitha/Portfolio",
     },
     {
       id: 4,
       src: docsearch,
+      link: "https://github.com/GevinHasmitha/Algo_Flex",
     },
     {
       id: 5,
       src: mrRobott,
+      link: "https://github.com/GevinHasmitha/MrRobot_Computer_Store",
     },
     {
       id: 6,
       src: skinConsultation,
+      link: "https://github.com/GevinHasmitha/Skin-consultation-management-system",
     },
     {
       id: 7,
       src: markspred,
+      link: "https://github.com/GevinHasmitha/Student-progression-prediction-System",
     },
   ];
   return (
@@ -52,7 +59,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3  gap-8 px-12 sm:px-0">
-          {cards.map(({ id, src }) => (
+          {cards.map(({ id, src, link }) => (
             <div key={id} className=" shadow-md shadow-gray-600 rounded-lg ">
               <img
                 src={src}
@@ -63,9 +70,11 @@ const Portfolio = () => {
                 <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200 ">
                   Demo
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200 ">
-                  Code
-                </button>
+                <a href={link}>
+                  <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200 ">
+                    Code
+                  </button>
+                </a>
               </div>
             </div>
           ))}
